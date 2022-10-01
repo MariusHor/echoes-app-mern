@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 import cors from 'cors';
 import { dbConfig } from './config/dbConfig.js';
+import postsRoutes from './routes/postsRoutes.js';
 
 // App config
 const app = express();
@@ -18,6 +19,8 @@ app.use(cors());
 dbConfig();
 
 // API Endpoints
+
+app.use('/posts', postsRoutes);
 
 // Listener
 app.listen(port, () => console.log(`Listening on port ${port}`));
