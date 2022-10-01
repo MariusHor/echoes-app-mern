@@ -3,6 +3,7 @@ import express, { urlencoded } from 'express';
 import dotenv from 'dotenv';
 dotenv.config();
 import cors from 'cors';
+import { dbConfig } from './config/dbConfig.js';
 
 // App config
 const app = express();
@@ -14,6 +15,7 @@ app.use(urlencoded({ extended: false }));
 app.use(cors());
 
 // Database
+dbConfig();
 
 // API Endpoints
 
