@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Container } from '@mui/material';
 import { useDispatch } from 'react-redux';
 
-import { getPosts} from './actions/posts'
+import { getPosts} from './actions/postsActions'
 import { Navbar } from './components';
 import { Content } from './containers';
 import './App.scss';
