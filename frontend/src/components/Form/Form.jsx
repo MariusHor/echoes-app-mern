@@ -23,7 +23,7 @@ const Form = () => {
   // When the form is submitted, this function runs sending a post request with the user data
   const handleSubmit = e => {
     // This prevents the window from reloading on submit
-    e.preventDefault(); 
+    e.preventDefault();
 
     // We then call 'dispatch()' which dispatches the 'createPost()' action that we've created inside '../../actions/posts.js'.
     // The data that it receives is the postData that was updated with the new property values that the user typed.

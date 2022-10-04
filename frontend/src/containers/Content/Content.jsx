@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Grid, Grow } from '@mui/material';
 
 import { Posts, Form } from '../../components';
-import './Content.scss'
+import './Content.scss';
 
 const Content = () => {
   return (
